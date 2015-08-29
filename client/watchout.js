@@ -43,7 +43,7 @@ svg.selectAll("circle")
 //create "force" layout
 var force = d3.layout.force()
       .gravity(0.1)
-      .charge(function(d, i) { return i ? -1000 : 0; })
+      .charge(function(d, i) { return i ? -1000 : 500; })
       .nodes(critters)  //critters get initialized to random x,y positions here by default
       .size([gameSettings.boardWidth, gameSettings.boardHeight]) // set the center of gravity
       .friction(0.70); 
